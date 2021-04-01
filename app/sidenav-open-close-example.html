@@ -1,0 +1,39 @@
+	<button mat-button (click)="open=!open"#trigger="cdkOverlayOrigin" cdkOverlayOrigin>Toggle cdkOverlayOrigin</button>
+
+
+
+		<ng-template cdk-connected-overlay 
+    #debugRef="cdkConnectedOverlay"[cdkConnectedOverlayScrollStrategy]="scrollStrategy" [cdkConnectedOverlayOrigin]="trigger"
+		 [cdkConnectedOverlayOpen]="open"
+                  (detach)="overlayDetach(debugRef)"
+             (attach)="overlayAttach(debugRef)">
+
+
+			<mat-card>
+				<mat-card-title>Overlay</mat-card-title>
+			<p>	ListKeyManager manages the active option in a list of items based on keyboard interaction. Intended to be used with components
+				that correspond to a role="menu" or role="listbox" pattern. ListKeyManager manages the active option in a list of items
+				based on keyboard interaction. Intended to be used with components that correspond to a role="menu" or role="listbox"
+				pattern.</p>
+        <p>	ListKeyManager manages the active option in a list of items based on keyboard interaction. Intended to be used with components
+				that correspond to a role="menu" or role="listbox" pattern. ListKeyManager manages the active option in a list of items
+				based on keyboard interaction. Intended to be used with components that correspond to a role="menu" or role="listbox"
+				pattern.</p>
+                <p>	ListKeyManager manages the active option in a list of items based on keyboard interaction. Intended to be used with components
+				that correspond to a role="menu" or role="listbox" pattern. ListKeyManager manages the active option in a list of items
+				based on keyboard interaction. Intended to be used with components that correspond to a role="menu" or role="listbox"
+				pattern.</p>
+                <p>	ListKeyManager manages the active option in a list of items based on keyboard interaction. Intended to be used with components
+				that correspond to a role="menu" or role="listbox" pattern. ListKeyManager manages the active option in a list of items
+				based on keyboard interaction. Intended to be used with components that correspond to a role="menu" or role="listbox"
+				pattern.</p>
+			</mat-card>
+
+		</ng-template>
+
+
+
+
+<!-- Copyright 2018 Google Inc. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->
